@@ -2,31 +2,31 @@ import java.util.Iterator;
 
 import org.junit.Assert;
 import org.junit.Test;
-import org.wecancodeit.exercise.ohmy.OhMyIterator;
 
 public class VirtualPetTest {
 	
 	private int hours;
 	private int days;
 
-	@Test
-	public void shouldReturnInput() {
+	//@Test
+	//public void shouldReturnInput() {
 		//arrange
-		VirtualPet underTest = new VirtualPet();
+		//VirtualPet underTest = new VirtualPet();
 		//act
-		String input = underTest.input();
+		//String input = underTest.input();
 		//assert
-		Assert.assertEquals("test", input);
-	}
+		//Assert.assertEquals("test", input);
+	//}
 	
 	@Test
 	public void shouldReturnTick() {
 		//arrange
 		VirtualPet underTest = new VirtualPet();
 		//act
-		String first = underTest.tick(hours, days);
+		String status = underTest.tick(1);
 		//assert
-		Assert.assertEquals("lions", first);
+		String answer = "Status = "+1+"     "+1+"      "+1+"      "+1+"    "+1+"   "+0;
+		Assert.assertEquals(answer, status);
 	}
 
 }

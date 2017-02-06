@@ -9,7 +9,7 @@ public class VirtualPet {
 	private int dirty;
 	private int sleeptimer;
 
-	public void tick(int speed) {
+	public String tick(int speed) {
 
 		hungry+= speed;
 		if (hungry >= 100) {
@@ -58,8 +58,9 @@ public class VirtualPet {
 		}
 
 		System.out.println("        Hungry"+" "+"Thirsty"+" "+"Sleepy"+" "+"Bored"+" "+"Poop"+" "+"Dirty");
+		String status = "Status = "+hungry+"     "+thirsty+"      "+sleepy+"      "+bored+"    "+poop+"   "+dirty;
 		System.out.println("Status = "+hungry+"     "+thirsty+"      "+sleepy+"      "+bored+"    "+poop+"   "+dirty);
-		//	return ;
+		return status;
 	}
 
 	public void feed() {
